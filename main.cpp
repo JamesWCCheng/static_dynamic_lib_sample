@@ -1,8 +1,7 @@
-#include "dynamic.h"
+#include "dyn2dyn.h"
 
 int main()
 {
-
-  DynamicFoo();
+  CallDynamic();
   return 0;
 }

@@ -11,4 +11,4 @@ void DynamicFoo();
 }
 #endif // __cplusplus
 
-#endif // STATIC_H
+#endif // DYNAMIC_H

@@ -1,10 +1,10 @@
 TARGET := main
-DYNAMICLIB := libdynamic.so
+DYNAMICLIB := libdyn2dyn.so
 INC = -I ./lib
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
 CXXFLAGS += -g -Wall -std=c++14
-LIBS	= -L./lib -ldynamic
+LIBS	= -L./lib -ldyn2dyn
 all: $(TARGET)
 $(TARGET): $(DYNAMICLIB)
 	$(CXX) $(LDFLAGS) ${INC} -o $@ main.cpp $(LIBS)
