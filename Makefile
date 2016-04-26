@@ -4,7 +4,7 @@ INC = -I ./lib
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
 CXXFLAGS += -g -Wall -std=c++14
-LIBS	= -L./lib -ldyn2dyn
+LIBS	= -L./lib -ldyn2dyn -ldynamic
 all: $(TARGET)
 $(TARGET): $(DYNAMICLIB)
 	$(CXX) $(LDFLAGS) ${INC} -o $@ main.cpp $(LIBS)

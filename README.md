@@ -22,3 +22,8 @@ symbol table會顯示 *UND* 用到的symbol
 
 exe link .so , exe中沒有.a的symbol  , only .so的
 
+
+
+make後
+export LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH
+./main
